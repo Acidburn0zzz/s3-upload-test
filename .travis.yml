@@ -3,6 +3,7 @@ sudo: true
 
 script:
   - dd if=/dev/urandom of=~/test-upload bs=1024 count=1024
+  - ls -la test-upload
 
 addons:
   artifacts: true
