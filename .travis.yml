@@ -2,8 +2,8 @@ language: bash
 sudo: true
 
 script:
-  - dd if=/dev/urandom of=test-upload bs=1024 count=1024
-  - ls -la test-upload
+  - dd if=/dev/urandom of=test-upload bs=1024K count=1024
+  - ls -lah test-upload
 
 addons:
   artifacts: true
