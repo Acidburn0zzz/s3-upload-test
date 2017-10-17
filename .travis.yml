@@ -4,4 +4,4 @@ sudo: true
 script:
   - dd if=/dev/urandom of=test-upload bs=1000K count=1000
   - ls -lah test-upload
-  - artifacts upload test-upload
+  - ./artifacts upload test-upload
